@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-Ecommerce-App/static/css/main.72b628ce.css",
+    "main.js": "/React-Ecommerce-App/static/js/main.37f1629a.js",
+    "static/media/blue.jpg": "/React-Ecommerce-App/static/media/blue.439e08b602a126ce7a9e.jpg",
+    "static/media/laptop.png": "/React-Ecommerce-App/static/media/laptop.c8557a4fdff997eacb84.png",
+    "static/media/card3.jpg": "/React-Ecommerce-App/static/media/card3.841561a994741f8a7576.jpg",
+    "static/media/shoes.png": "/React-Ecommerce-App/static/media/shoes.74428cde27f897c4fa14.png",
+    "static/media/watch.png": "/React-Ecommerce-App/static/media/watch.75427b4a557e6b404244.png",
+    "static/media/card2.jpg": "/React-Ecommerce-App/static/media/card2.3745ab624454b44d4ddd.jpg",
+    "static/media/oppo.png": "/React-Ecommerce-App/static/media/oppo.48e5058e8085056585f6.png",
+    "static/media/perfum.png": "/React-Ecommerce-App/static/media/perfum.5ab1b476db283ab40b15.png",
+    "static/media/card1.jpg": "/React-Ecommerce-App/static/media/card1.51fa624b9fbc8e4be372.jpg",
+    "static/media/aboutBg.svg": "/React-Ecommerce-App/static/media/aboutBg.186332023a8b160ca97e437b1ea48774.svg",
+    "static/media/email.svg": "/React-Ecommerce-App/static/media/email.a309d5dcaa4f33492227caefbb63e8c3.svg",
+    "index.html": "/React-Ecommerce-App/index.html",
+    "main.72b628ce.css.map": "/React-Ecommerce-App/static/css/main.72b628ce.css.map",
+    "main.37f1629a.js.map": "/React-Ecommerce-App/static/js/main.37f1629a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72b628ce.css",
+    "static/js/main.37f1629a.js"
+  ]
+}
