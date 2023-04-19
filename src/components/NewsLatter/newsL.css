@@ -1,0 +1,256 @@
+.newsLetter{
+   position: relative;
+    
+    width: 100%;
+    height: 150px;
+    background-image: url('./images/blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.newsLetter .main_con{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.newsLetter .contentL{
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+
+}
+
+
+.newsLetter .contentL span:nth-child(1){
+
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+}
+.newsLetter .contentL span:nth-child(2){
+
+    font-size: 2rem;
+    letter-spacing: 1px;
+
+}
+
+.newsLetter .inputHandle{
+  
+    display: flex;
+    align-items: center;
+    
+    
+}
+.newsLetter .inputHandle input{
+  
+   padding: 0.7rem 0.4rem;
+   width: 17rem;
+   border: none;
+   
+}
+.newsLetter .inputHandle button{
+    
+    padding: 0.7rem 0.4rem;
+    border: none;
+    color: white;
+  background-color: rgb(12, 18, 24);
+
+}
+
+
+.newsLetter .combineInputBox{
+    display: flex;
+}
+
+.newsLetter .combineInputBox img{
+    height: 135px;
+    position: relative;
+    bottom: 20px;
+
+}
+
+/* media queries start */
+
+/* sm device */
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 0px){
+
+
+
+   .newsLetter .main_con{
+      display: flex;
+      flex-direction: column;
+      padding: 0.8rem 1.7rem;
+      gap: 1rem;
+      align-items: flex-start;
+   }
+
+   .newsLetter .contentL{
+      margin-top: 5px;
+   }
+   .newsLetter .contentL span:nth-child(1){
+      font-size: 0.8rem;
+      
+
+   }
+   .newsLetter .contentL span:nth-child(2){
+      font-size: 1.1rem;
+
+
+   }
+   .newsLetter .inputHandle{
+      position: relative;
+      width: 100%;
+   }
+     
+   .newsLetter .combineInputBox{
+    position: relative;
+    width: 100%;
+   }
+
+   .newsLetter .inputHandle input{
+      position: relative;
+      width: 100%;
+   }
+
+   .newsLetter .combineInputBox img{
+      height: 96px;
+      position: absolute;
+      bottom: 45px;
+      right: -23px;
+   }
+ 
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1030px) and (min-width: 768px){
+
+
+
+   .newsLetter .main_con{
+      display: flex;
+      flex-direction: column;
+      padding: 0.8rem 1.7rem;
+      gap: 1rem;
+      align-items: flex-start;
+   }
+
+   .newsLetter .contentL{
+      margin-top: 5px;
+   }
+   .newsLetter .contentL span:nth-child(1){
+      font-size: 0.9rem;
+      
+
+   }
+   .newsLetter .contentL span:nth-child(2){
+      font-size: 1.4rem;
+
+
+   }
+   .newsLetter .inputHandle{
+      position: relative;
+      width: 100%;
+   }
+     
+   .newsLetter .combineInputBox{
+    position: relative;
+    width: 100%;
+   }
+
+   .newsLetter .inputHandle input{
+      position: relative;
+      width: 100%;
+   }
+
+   .newsLetter .combineInputBox img{
+      height: 102px;
+      position: absolute;
+      bottom: 45px;
+      right: -27px;
+   }
+ 
+
+
+
+
+}
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 600px){
+ 
+     
+   
+   } */
+
+
+   @media only screen and (max-width: 1250px) and (min-width: 1030px){
+
+
+
+
+    .newsLetter .main_con{
+        display: flex;
+        flex-direction: column;
+        padding: 0.8rem 3.7rem;
+        gap: 1rem;
+        align-items: flex-start;
+     }
+
+     .newsLetter .contentL{
+        margin-top: 5px;
+     }
+     .newsLetter .contentL span:nth-child(1){
+        font-size: 0.9rem;
+        
+
+     }
+     .newsLetter .contentL span:nth-child(2){
+        font-size: 1.5rem;
+
+
+     }
+     .newsLetter .inputHandle{
+        position: relative;
+        width: 100%;
+     }
+       
+     .newsLetter .inputHandle input{
+        position: relative;
+        width: 100%;
+     }
+       
+     .newsLetter .combineInputBox{
+      position: relative;
+      width: 100%;
+     }
+
+     .newsLetter .combineInputBox img{
+        height: 96px;
+        position: absolute;
+        bottom: 45px;
+        right: -23px;
+     }
+
+ 
+
+ 
+
+}

@@ -1,0 +1,90 @@
+/* ul.css-wjh20t-MuiPagination-ul{
+    width: 22rem;
+} */
+
+
+.centerDiv{
+    background-color: aliceblue;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.centerDiv h1{
+   font-size: 2rem;
+}
+.centerDiv h2{
+   font-size: 1.3rem;
+   margin-top: 16px;
+}
+
+
+.dataWrapper{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cardW{
+    display: flex;
+    gap: 0.5rem;
+    width: 15rem;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.cardW img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.cardW h1{
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.pagination1{
+
+    display: flex;
+    padding: 0.6rem 0rem;
+    gap: 0.6rem;
+    margin: 1rem 0rem;
+    justify-content: center;
+}
+
+.pagination1>span{
+  
+ cursor: pointer;
+ font-size: 1.2rem;
+}
+
+.paginationSelected{
+    color: rgb(196, 58, 12);
+    transform: scale(1.2);
+}
+
+.paginationHide{
+    display: none;
+}
+
+
+
+
+
+.disabledBtn{
+ 
+    transform: scale(1.2);
+    
+
+}
+
+button{
+    all: unset;
+}

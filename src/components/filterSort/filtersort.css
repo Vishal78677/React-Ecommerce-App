@@ -1,0 +1,65 @@
+/* .price_h2{
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+} */
+
+.main_filter{
+
+    position: sticky;
+    top: 15px;
+}
+.category_section{
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.category_section h2{
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.filter_rating{
+  margin-top: 5rem;
+  width: 100%;
+}
+
+
+/* media queries start */
+/* xs device */
+    
+@media only screen and (max-width: 600px) {
+   
+    .filter_rating{
+        margin-top: 3rem;
+        padding: 0.8rem 0.4rem;
+    }
+
+    .category_section{
+        margin-top: 3rem;
+        padding: 0.8rem 0.4rem;
+    }
+    .category_section h2{
+        font-size: 1.2rem;
+    }
+    
+
+  }
+
+
+/* sm device media queries */
+
+@media only screen and (max-width: 1030px){
+
+    .filter_rating{
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .category_section h2{
+        font-size: 1.2rem;
+    }
+
+ 
+
+
+}  

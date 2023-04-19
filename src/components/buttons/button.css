@@ -1,0 +1,54 @@
+
+.category{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.select-category{
+  padding-left: 5rem;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+svg.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon{
+    color: white;
+}  

@@ -1,0 +1,97 @@
+.main_total{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.totalDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.6rem;
+    padding-top: 1.4rem;
+}
+
+.totalDetails .spanHeading,.spanPrice{
+     font-size: 1.2rem;
+}
+
+.totalDetails .bottom{
+    padding-bottom: 0.2rem;
+}
+
+.totalDetails2{
+    padding-bottom: 1.4rem;
+}
+
+.totalDetails2 .totalC{
+    padding-top: 0.2rem;
+    padding-bottom: 1.2rem;
+    color: black;
+    font-weight: 500;
+}
+
+.totalDetails2 .totalBtn{
+    text-transform: uppercase;
+    border: 1px solid none;
+    color: white;
+    background-color: #007aff;
+    padding: 0.4rem 0.1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+}
+.totalDetails2 .totalBtn:hover{
+ background-color: #0865c7;
+ transition: 0.4s ease;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6c6d6d;
+}
+
+.totalHeading{
+    color: #6c6d6d;
+    border-bottom: 1px solid lightgray;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* media queries starts */
+ /* sm device */
+
+ @media only screen and (max-width: 600px) {
+  
+ 
+  .totalHeading{
+    font-size: 1.2rem;
+  }
+
+  .totalDetails .spanHeading, .spanPrice{
+    font-size: 1rem;
+  }
+
+
+
+  } 
+
+
+  
+  @media only screen and (max-width: 1030px) and (min-width: 768px) {
+
+
+    .cartCon .cartWrapper .productsTotal{
+       
+        align-self: flex-end;
+
+    }
+
+
+
+  }

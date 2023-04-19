@@ -1,0 +1,72 @@
+.input_wrapper{
+  
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.8rem 0rem;
+}
+
+.input_wrapper input{
+    height: 100%;
+    width: 85%;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid silver;
+    border-radius: 8px;
+    
+}
+.input_wrapper button{
+    position: absolute;
+    right: 18%;
+    border: 1px solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0.1rem;
+
+}
+
+
+/* media queries start */
+/* sm device */
+
+@media only screen and (max-width: 600px) {
+    
+    .input_wrapper{
+        padding: 0.8rem 0.4rem;
+    }
+
+    .input_wrapper input{
+        width: 100%;
+    }
+
+    .input_wrapper button{
+        right: 4%;
+    }
+
+  }
+
+
+
+  /* sm device  */
+
+@media only screen and (min-width: 600px){
+
+    .input_wrapper{
+        width: 100%;
+    }
+
+    .input_wrapper input{
+        width: 100%;
+    }
+
+    .input_wrapper button{
+         
+        position: absolute;
+        right: 3%;
+
+    }
+
+
+
+}    

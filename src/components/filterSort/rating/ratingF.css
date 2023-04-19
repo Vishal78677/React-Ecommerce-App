@@ -1,0 +1,30 @@
+
+.ratingFilter h2{
+    font-size: 1.5rem;
+}
+
+svg.css-1vooibu-MuiSvgIcon-root{
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .ratingFilter h2{
+        font-size: 1.2rem;
+    }
+   
+  }
+
+
+/* sm device */
+
+@media only screen and (min-width: 600px){
+
+    .ratingFilter h2{
+        font-size: 1.2rem;
+    }
+
+
+
+}  

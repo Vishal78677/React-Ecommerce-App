@@ -1,0 +1,316 @@
+
+.cartData{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+
+.cartData .cartProducts{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    margin: 0 0.8rem ;
+
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    padding: 1rem 0.8rem;
+
+}
+
+.cartData .cartProducts::-webkit-scrollbar{
+  width: 6px;
+  width: 6px;
+
+}
+
+
+.cartData .cartProducts .leftDetails{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+
+}
+.cartData .cartProducts .leftDetails .leftHeading{
+ 
+    font-size: 1rem;
+    /* color: lightgray; */
+    color: gray;
+    font-weight: 400;
+    width: 100%;
+    padding: 0.2rem 0.8rem;
+
+}
+
+
+.cartData .cartProducts .leftDetails .leftDetailsFlex{
+
+    display: flex;
+    
+    align-items: center;
+    gap: 0.8rem;
+
+}
+
+
+.imgL{
+
+   width: 200px;
+   height: 200px;
+   object-fit: contain ;
+   border-radius: 5px;
+}
+
+
+.cartData .cartProducts .leftDetails .textDetails{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    width: 11rem;
+    gap: 0.2rem;
+
+}
+
+.spanWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.spanWrapper .productSpan{
+
+    font-size: 1.2rem;
+  
+
+}
+
+.productSpan{
+
+   
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    
+
+}
+.productBrandSpan{
+
+   
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+
+}
+
+
+.cartData .cartProducts .rightDetails{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.QuantityWrapper{
+   
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.QuantityWrapper .btnC{
+   
+    border: 1px solid transparent;
+    background-color: rgb(199, 39, 151);
+    color: white;
+    padding: 0rem 0.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+
+div.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+    box-shadow: none;
+} 
+
+
+
+
+th.css-1ygcj2i-MuiTableCell-root{
+  text-align: center;
+}
+
+td.css-177gid-MuiTableCell-root{
+  
+    text-align: center;
+
+}
+
+.cartData .cartBtns{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+
+
+}
+
+.cartData .cartBtns .leftBtn{
+  background-color: rgb(246, 134, 64);
+  border-radius: 5px;
+  color: white;
+}
+
+.cartData .cartBtns .rightBtn{
+    background-color: crimson;
+    border-radius: 5px;
+  color: white;
+}
+
+
+
+
+.cartData .cartBtns .btnS{
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.4rem 0.7rem;
+  
+}
+
+
+
+
+
+
+
+
+
+.wrapper_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.wrapper_item .img_title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    
+  
+}
+.wrapper_item .img_title h4{
+   width: 100%;
+   margin: 0 auto;
+   font-size: 1.3rem;
+   margin-left: 7rem;
+   
+    
+  
+}
+.small_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  
+  
+}
+
+.wrapper_item .price_inc_del{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding-right: 2rem;
+    
+}
+.wrapper_item .price_inc_del .btn_cart{
+   border: 1px solid red;
+   background-color: aliceblue;
+   width: 7rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    
+}
+.wrapper_item .price_inc_del .btn_cart button{
+ padding: 0.6rem 0.7rem;
+ border: none;   
+ 
+}
+
+
+
+.wrapper_item .cart_img{
+    width: 12rem;
+}
+.wrapper_item .cart_img img{
+    width: 100%;
+}
+
+.wrapper_item .Title_cart{
+    font-size: 1.5rem;
+}
+
+
+
+/* media queries starts */
+ /* xs device */
+
+ @media only screen and (max-width: 600px) {
+  
+ 
+ .cartData .cartBtns{
+    display: flex;
+    justify-content: center;
+    
+ }
+
+
+
+
+  }
+
+  /*  sm device */
+
+ @media only screen and (max-width: 768px) {
+  
+ 
+ .cartData .cartBtns{
+    display: flex;
+    justify-content: center;
+    
+ }
+
+
+
+}
+
+
+/* md device */
+
+
+@media only screen and (max-width: 1030px){
+
+  
+    .spanWrapper .productSpan{
+
+        font-size: 1rem;
+    }
+
+}
+
+
+

@@ -1,0 +1,175 @@
+.cart{
+    background-color: white;
+    
+  
+}
+
+.cartCon{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem 0rem;
+    /* border: 1px solid red; */
+}
+
+
+.cartCon .cartWrapper{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+ 
+
+}
+
+.emptyCart .emptyContent .emptyH{
+    font-size: 2.2rem; 
+    color: gray;
+
+}
+
+.cartCon .cartWrapper .productsCart{
+   
+    /* background-color: antiquewhite; */
+    /* background-color: #007aff; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    width: 100%;
+    border-radius: 7px;
+}
+
+.cartCon .cartWrapper .productsTotal{
+    position: sticky;
+    top: 20px;
+    width: 22rem;
+    height: 19rem;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.cart .cart_br{
+  /* background-color: rgb(82, 65, 43); */
+  padding: 2rem 0rem;
+  width: 100%;
+}
+
+.main_section .cart_product{
+    padding: 1rem 0rem;
+    background-color: rgb(190, 190, 99);
+}
+
+.main_section .Total_Price{
+    display: flex;
+    justify-content: end;
+    padding: 0rem 0rem;
+    height: 300px;
+    background-color: antiquewhite;
+
+}
+
+
+.emptyCart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0rem ;
+}
+
+.emptyCart .emptyContent{
+  display: flex;
+  gap: 1.2rem;
+}
+
+.emptyCart .emptyContent svg{
+    font-size: 3.4rem; 
+    color: gray;
+
+}
+
+
+/* media queries starts */
+ /* sm device */
+
+ @media only screen and (max-width: 600px) {
+  
+ 
+    .cartCon{
+    
+        padding: 2rem 0rem;
+    }
+
+    .cartCon .cartWrapper{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .cart .cart_br{
+
+        padding: 2rem 1rem;
+    }
+
+    .emptyCart .emptyContent .emptyH{
+        font-size: 1.2rem; 
+        color: gray;
+
+    }
+
+    .emptyCart .emptyContent svg{
+        font-size: 2.1rem; 
+        color: gray;
+
+    }
+
+
+
+  }
+
+
+  @media only screen and (max-width: 1030px){
+
+
+    .cartCon{
+    
+        padding: 2rem 0rem;
+    }
+
+    .cartCon .cartWrapper{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .cart .cart_br{
+
+        padding: 2rem 1rem;
+    }
+
+    .emptyCart .emptyContent .emptyH{
+        font-size: 1.2rem; 
+        color: gray;
+
+    }
+
+    .emptyCart .emptyContent svg{
+        font-size: 2.1rem; 
+        color: gray;
+
+    }
+     
+
+
+
+  }  

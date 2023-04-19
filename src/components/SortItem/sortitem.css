@@ -1,0 +1,184 @@
+.sort-main{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.sort-main .showing_items{
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+    flex: 1;
+}
+.sort-main .showing_items p{
+ font-size: 1.3rem;
+ margin-left: 5rem;
+ margin-top: 1rem;
+}
+
+
+
+.sort-main .sort_section{
+    display: flex;
+    justify-content: flex-end;
+ 
+    flex: 1;
+    height: 100%;
+}
+
+
+.sort-main .sort_section .manage_sort{
+    width: 40%;
+    height: 100%;
+}
+
+
+/* media queries start */
+/* sm device */
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 0px){
+
+    .sort-main{
+         
+        display: flex;
+        height: max-content;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5rem;
+
+    }
+
+    .sort-main .showing_items p{
+
+           
+        font-size: 1.2rem;
+         margin-left: 0rem;
+         margin-top: 1rem;
+
+
+    }
+
+    .sort-main .sort_section{
+         
+        width: 100%;
+
+
+    }
+
+    .sort-main .sort_section .manage_sort{
+        width: 100%;
+    }
+  
+
+
+
+}
+
+/* 
+@media only screen and (max-width: 600px) {
+   
+ 
+    .sort-main{
+        display: flex;
+        padding: 0rem 1.1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sort-main .showing_items p{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-left: 0;
+        
+    }
+
+    .sort-main .sort_section{
+        width: 100%;
+    }
+    .sort-main .sort_section .manage_sort{
+        width: 100%;
+        
+    }
+
+
+
+  } */
+
+
+  /* sm device */
+
+
+  /* @media only screen and (max-width: 768px){
+
+ 
+
+  
+
+
+
+  }     */
+
+
+/* @media only screen and (max-width: 1030px){
+
+
+    .sort-main{
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sort-main .sort_section{
+
+        display: flex;
+        flex: 1;
+    }
+  
+    .sort-main .showing_items{
+
+      
+        display: flex;
+        flex: 2;
+
+    }
+
+
+}  */
+
+@media only screen and (max-width: 1030px) and (min-width: 768px){
+
+
+    .sort-main{
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sort-main .sort_section .manage_sort{
+      
+        width: 100%;
+
+    }
+
+    .sort-main .sort_section{
+
+        display: flex;
+        flex: 1;
+    }
+  
+    .sort-main .showing_items{
+
+      
+        display: flex;
+        flex: 2;
+
+    }
+
+
+} 

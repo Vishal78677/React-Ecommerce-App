@@ -1,0 +1,65 @@
+.serviceCard{
+    width: 22rem;
+    display: flex;
+    gap: 0.8rem;
+    /* align-items: center; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.2rem 0.8rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+
+}
+.serviceCard{
+padding-left: 2.4rem ;
+
+}
+.serviceCard .icon {
+font-size: 2.5rem;
+color: rgb(243, 102, 131);
+
+}
+.content{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: gray;
+  
+
+}
+/* span:nth-child(1){
+ 
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+
+} */
+
+
+@media only screen and (min-width: 600px){
+  
+  .serviceCard{
+
+   
+    width: 100%;
+    /* padding: 1.2rem 1rem; */
+
+  }
+
+
+}
+
+
+@media only screen and (min-width: 768px){
+ 
+
+  
+  .serviceCard{
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+   
+
+
+}

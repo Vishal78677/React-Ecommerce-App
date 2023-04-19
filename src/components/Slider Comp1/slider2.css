@@ -1,0 +1,146 @@
+.slider1{
+    padding: 6rem 0rem;
+    height: 520px;
+    margin: 1rem 0rem;
+    /* margin-bottom: 5rem; */
+}
+
+.swiper {
+    width: 100%;
+    height: 110%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  div.swiper-wrapper{
+
+   height: fit-content;
+  }
+ .shadow-slider{
+   padding: 0.1rem 0rem;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+ } 
+
+
+ .cardS{
+    width: 100%;
+    height: 22rem;
+    background-color: white;
+     border-radius: 0px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+.cardS:hover{
+    transition: 0.4s ease;
+    transform: scale(1.02);
+  
+  }
+  
+.cardS .card-detail{
+  display: flex;
+  height: 45%;
+  color: black;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  padding: 0rem 0.5rem;
+  gap: 1.7rem;
+  }
+  
+.cardS.card-detail.name-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  
+  section.cardS.card_image{
+    width: 100%;
+    padding-bottom: 1rem;
+    
+  }
+  
+.cardS .card_image img{
+    /* padding: 0.5rem 0rem; */
+    /* padding-top: 1rem; */
+    width: 100%;
+    height: 10rem;
+    /* border-radius: 15px; */
+    /* object-fit: contain; */
+    object-fit: fill;
+    
+  
+   
+}
+  
+  
+.addBtn{
+    padding: 0.6rem 1.1rem;
+  
+    border-radius: 20px;
+    border: none;
+    margin:  0 auto;
+    color: white;
+    width: 52%;
+    font-weight: 500;
+    transition: 0.4s ease;
+  } 
+.addBtn:hover{
+
+    border: 1px solid purple ;
+    background-color: transparent;
+    color: purple;
+
+  } 
+  
+.deal{
+    color: crimson;
+    padding: 0rem 0.3rem;
+}
+
+.getDis{
+    padding: 0.3rem 0.2rem;
+    background-color: crimson;
+    color: white;
+
+}
+
+
+/* media queries start */
+
+@media only screen and (max-width: 600px){
+ 
+   .services{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    margin: 2rem 0rem;
+
+   }
+ 
+ }

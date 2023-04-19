@@ -1,0 +1,81 @@
+
+
+.cardd{
+    width: 20rem;
+    height: 100%;
+    background-color: white;
+   
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+.cardd:hover{
+    transition: 0.4s ease;
+    transform: scale(1.02);
+  
+  }
+  
+.cardd .card_details{
+  display: flex;
+  color: black;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 0rem 0.5rem;
+  gap: 0.8rem;
+  }
+  
+.cardd .card_details .name-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  
+  section .cardd .card_image{
+    width: 100%;
+    padding-bottom: 1rem;
+    
+  }
+  
+.cardd .card_image img{
+    padding: 0.5rem 0rem;
+    padding-top: 1rem;
+    width: 80%;
+    height: 10rem;
+    border-radius: 15px;
+    object-fit: contain;
+    
+  
+   
+}
+  
+  
+.addBtn{
+    padding: 0.6rem 1.1rem;
+  
+    border-radius: 20px;
+    border: none;
+    margin:  0 auto;
+    color: white;
+    width: 52%;
+    font-weight: 500;
+    transition: 0.4s ease;
+  } 
+.addBtn:hover{
+
+    border: 1px solid purple ;
+    background-color: transparent;
+    color: purple;
+
+  } 
+  
+.deal{
+    color: crimson;
+    padding: 0rem 0.3rem;
+}
+
+.getDis{
+    padding: 0.3rem 0.2rem;
+    background-color: crimson;
+    color: white;
+
+}
