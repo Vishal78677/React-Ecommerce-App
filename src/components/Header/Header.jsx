@@ -178,31 +178,31 @@ const Header = () => {
             </NavLink>
           </div>
           <div className='nav-btns'>
-            <div>
-              <Badge
-                style={{ color: '#14274E' }}
-                className='badge-c'
-                badgeContent={total_item > 0 ? total_item : '0'}
-                color='primary'
-              >
-                <span
-                  style={{
-                    color: 'gray',
-                    marginRight: '7px',
-                    textTransform: 'capitalize',
-                    fontWeight: '400',
-                    letterSpacing: '1px',
-                  }}
+            <Link to='/cart'>
+              <div>
+                <Badge
+                  style={{ color: '#14274E' }}
+                  className='badge-c'
+                  badgeContent={total_item > 0 ? total_item : '0'}
+                  color='primary'
                 >
-                  Cart
-                </span>
-                <Link to='/cart'>
+                  <span
+                    style={{
+                      color: 'gray',
+                      marginRight: '7px',
+                      textTransform: 'capitalize',
+                      fontWeight: '400',
+                      letterSpacing: '1px',
+                    }}
+                  >
+                    Cart
+                  </span>
                   <ShoppingCartIcon
                     style={{ fontSize: '1.8rem', color: 'gray' }}
                   />
-                </Link>
-              </Badge>
-            </div>
+                </Badge>
+              </div>
+            </Link>
             <div>
               <Button id='demo-positioned-button' style={{ fontSize: '1rem' }}>
                 <span
@@ -270,32 +270,32 @@ const Header = () => {
               anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
             >
               <MenuItem onClick={handleClose2}>
-                <div style={{ padding: '0.5rem' }}>
-                  <Badge
-                    style={{ color: '#14274E' }}
-                    className='badge-c'
-                    badgeContent={total_item > 0 ? total_item : '0'}
-                    color='primary'
-                  >
-                    <span
-                      style={{
-                        color: 'gray',
-                        marginRight: '7px',
-                        textTransform: 'capitalize',
-                        fontWeight: '400',
-                        letterSpacing: '1px',
-                        fontSize: '0.9rem',
-                      }}
+                <Link to='/cart'>
+                  <div style={{ padding: '0.5rem' }}>
+                    <Badge
+                      style={{ color: '#14274E' }}
+                      className='badge-c'
+                      badgeContent={total_item > 0 ? total_item : '0'}
+                      color='primary'
                     >
-                      Cart
-                    </span>
-                    <Link to='/cart'>
+                      <span
+                        style={{
+                          color: 'gray',
+                          marginRight: '7px',
+                          textTransform: 'capitalize',
+                          fontWeight: '400',
+                          letterSpacing: '1px',
+                          fontSize: '0.9rem',
+                        }}
+                      >
+                        Cart
+                      </span>
                       <ShoppingCartIcon
                         style={{ fontSize: '1.8rem', color: 'gray' }}
                       />
-                    </Link>
-                  </Badge>
-                </div>
+                    </Badge>
+                  </div>
+                </Link>
               </MenuItem>
               <MenuItem onClick={handleClose2}>
                 <Button
@@ -391,35 +391,35 @@ const Header = () => {
                 <Divider />
                 <div className='infoIcon'>
                   <div>
-                    <div
-                      style={{ padding: '0.5rem' }}
-                      onClick={() => setIsIconVisible(!isIconVisible)}
-                    >
-                      <Badge
-                        style={{ color: '#14274E' }}
-                        className='badge-c'
-                        badgeContent={total_item > 0 ? total_item : '0'}
-                        color='primary'
+                    <Link to='/cart'>
+                      <div
+                        style={{ padding: '0.5rem' }}
+                        onClick={() => setIsIconVisible(!isIconVisible)}
                       >
-                        <span
-                          style={{
-                            color: 'gray',
-                            marginRight: '7px',
-                            textTransform: 'capitalize',
-                            fontWeight: '400',
-                            letterSpacing: '1px',
-                            fontSize: '0.9rem',
-                          }}
+                        <Badge
+                          style={{ color: '#14274E' }}
+                          className='badge-c'
+                          badgeContent={total_item > 0 ? total_item : '0'}
+                          color='primary'
                         >
-                          Cart
-                        </span>
-                        <Link to='/cart'>
+                          <span
+                            style={{
+                              color: 'gray',
+                              marginRight: '7px',
+                              textTransform: 'capitalize',
+                              fontWeight: '400',
+                              letterSpacing: '1px',
+                              fontSize: '0.9rem',
+                            }}
+                          >
+                            Cart
+                          </span>
                           <ShoppingCartIcon
                             style={{ fontSize: '1.5rem', color: 'gray' }}
                           />
-                        </Link>
-                      </Badge>
-                    </div>
+                        </Badge>
+                      </div>
+                    </Link>
                   </div>
                   <div onClick={() => setIsIconVisible(!isIconVisible)}>
                     <Button
