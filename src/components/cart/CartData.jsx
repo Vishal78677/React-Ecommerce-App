@@ -16,7 +16,7 @@ import { setCartClear } from '../../reducer/CartSlice';
 const CartData = () => {
   const { cart } = useSelector((state) => state.cartSlice);
 
-  console.log('🚀 ~ file: Cart.jsx:11 ~ Cart ~ cart:', cart);
+  // console.log('🚀 ~ file: Cart.jsx:11 ~ Cart ~ cart:', cart);
 
   const dispatch = useDispatch();
 

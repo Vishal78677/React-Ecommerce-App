@@ -78,7 +78,7 @@ color:  rgb(145, 70, 215);
 
 
 .main_div .contact .right_con{
-    width: 85rem;
+    width: 100%;
     background-color: #f9f9f9; 
     padding: 1rem  2rem;
 }
@@ -119,7 +119,7 @@ color:  rgb(145, 70, 215);
     margin-top: 1rem;
     background-color: rgb(145, 70, 215);
     color: white;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 0rem;
     text-align: center;
     border: none;
     width: 100%;
@@ -241,6 +241,7 @@ color:  rgb(145, 70, 215);
 
         display: flex;
         justify-content: center;
+        width: 30%;
      }
 
 

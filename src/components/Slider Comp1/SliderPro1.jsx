@@ -8,9 +8,11 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { useGlobalContext } from '../../ContextApi';
 import { NavLink, useNavigate } from 'react-router-dom';
+import SliderCard from './slider card/SliderCard';
+import SliderSkeleton from './slider skeleton/SliderSkeleton';
 
 const SliderPro1 = ({ titleP, simplified }) => {
-  const { limitData, trendingData } = useGlobalContext();
+  const { limitData, trendingData, isLoading } = useGlobalContext();
 
   const navigate = useNavigate();
 
@@ -21,6 +23,8 @@ const SliderPro1 = ({ titleP, simplified }) => {
       navigate(`/product/${id}`);
     }
   };
+
+  const skeletonPro = [1, 2, 3, 4, 5];
 
   return (
     <div className='slider1'>
@@ -58,45 +62,46 @@ const SliderPro1 = ({ titleP, simplified }) => {
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination, Autoplay, Navigation]}
+        modules={[
+          FreeMode,
+          !isLoading && Pagination,
+          !isLoading && Autoplay,
+          !isLoading && Navigation,
+        ]}
         className='mySwiper'
       >
         {!simplified
-          ? limitData.map((curPro) => {
-              const { id, title, discountPercentage, thumbnail } = curPro;
+          ? isLoading
+            ? skeletonPro.map((curEle) => {
+                return (
+                  <SwiperSlide key={curEle} className='shadow-slider'>
+                    <SliderSkeleton />
+                  </SwiperSlide>
+                );
+              })
+            : limitData.map((curPro) => {
+                const { id, title, discountPercentage, thumbnail } = curPro;
+                return (
+                  <SwiperSlide
+                    className='shadow-slider'
+                    // style={{ maxWidth: '18rem' }}
+                    key={id}
+                  >
+                    <SliderCard
+                      id={id}
+                      title={title}
+                      discountPercentage={discountPercentage}
+                      thumbnail={thumbnail}
+                      handleProductPage={handleProductPage}
+                    />
+                  </SwiperSlide>
+                );
+              })
+          : isLoading
+          ? skeletonPro.map((curEle) => {
               return (
-                <SwiperSlide
-                  className='shadow-slider'
-                  // style={{ maxWidth: '18rem' }}
-                  key={id}
-                >
-                  <div className='cardS'>
-                    <div className='card_image'>
-                      <img src={thumbnail} alt={title} />
-                    </div>
-                    <div className='card-detail'>
-                      <div className='name-price'>
-                        <h3
-                          style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}
-                        >
-                          {title}{' '}
-                        </h3>
-                        <h3 style={{ fontSize: '0.8rem' }}>
-                          <span className='getDis'>
-                            Up to {discountPercentage}% off{' '}
-                          </span>{' '}
-                          <span className='deal'>Deal of the Day</span>{' '}
-                        </h3>
-                      </div>
-
-                      <button
-                        onClick={() => handleProductPage(id, 'limited')}
-                        className='addBtn'
-                      >
-                        Buy Now
-                      </button>
-                    </div>
-                  </div>
+                <SwiperSlide key={curEle} className='shadow-slider'>
+                  <SliderSkeleton />
                 </SwiperSlide>
               );
             })
@@ -108,33 +113,13 @@ const SliderPro1 = ({ titleP, simplified }) => {
                   // style={{ maxWidth: '18rem' }}
                   key={id}
                 >
-                  <div className='cardS'>
-                    <div className='card_image'>
-                      <img src={thumbnail} alt={title} />
-                    </div>
-                    <div className='card-detail'>
-                      <div className='name-price'>
-                        <h3
-                          style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}
-                        >
-                          {title}{' '}
-                        </h3>
-                        <h3 style={{ fontSize: '0.8rem' }}>
-                          <span className='getDis'>
-                            Up to {discountPercentage}% off{' '}
-                          </span>{' '}
-                          <span className='deal'>Deal of the Day</span>{' '}
-                        </h3>
-                      </div>
-
-                      <button
-                        onClick={() => handleProductPage(id, 'trending')}
-                        className='addBtn'
-                      >
-                        Buy Now
-                      </button>
-                    </div>
-                  </div>
+                  <SliderCard
+                    id={id}
+                    title={title}
+                    discountPercentage={discountPercentage}
+                    thumbnail={thumbnail}
+                    handleProductPage={handleProductPage}
+                  />
                 </SwiperSlide>
               );
             })}

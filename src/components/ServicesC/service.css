@@ -84,7 +84,78 @@
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 410px) and (min-width: 0px){
+
+    
+    .cardWrapper{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill , minmax(291px , 356px));
+        
+     }
+
+    .cardC{
+        display: flex;
+        flex-direction: column;
+         width: 100%;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+
+     .cardC .cardDetails{
+        padding: 1rem 0.2rem;
+        text-align: center;
+     }
+
+     .cardHeading{
+        font-size: 1.2rem;
+     }
+
+     .cardNote{
+        font-size: 0.8rem;
+     }
+
+
+
+} 
+
+@media only screen and (max-width: 600px) and (min-width: 410px){
+
+     
+    .cardC{
+        display: flex;
+        flex-direction: column;
+         width: 22rem;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+
+     .cardWrapper{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill , minmax(291px , 356px));
+        
+     }
+
+     .cardC .cardDetails{
+        padding: 1rem 2rem;
+        text-align: center;
+     }
+     .cardHeading{
+        
+        font-size: 1rem;
+     }
+     .cardNote{
+        color: gray;
+        font-size: 0.9rem;
+     }
+     .content{
+        color: gray;
+     }
+
+
+}
+
+
+/* @media only screen and (max-width: 600px){
  
     .cardC{
         display: flex;
@@ -115,7 +186,7 @@
         color: gray;
      }
    
-}
+} */
 
 
    /* @media only screen and (max-width: 1030px){ */

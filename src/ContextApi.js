@@ -9,6 +9,8 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [limitData, setLimitData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
   // console.log(
   //   '🚀 ~ file: ContextApi.js:12 ~ AppProvider ~ limitData:',
   //   limitData
@@ -21,33 +23,39 @@ const AppProvider = ({ children }) => {
   // );
 
   const getLimitProduct = async () => {
+    setIsLoading(true);
     try {
       const res = await axios.get(`https://dummyjson.com/products?limit=10`);
       setLimitData(res.data.products);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
+      setIsLoading(false);
     }
   };
 
-  const treadingData = async () => {
+  const trendingDataF = async () => {
+    setIsLoading(true);
     try {
       const res = await axios.get(
         'https://dummyjson.com/products?limit=10&skip=30'
       );
 
       setTrendingData(res?.data?.products);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
+      setIsLoading(false);
     }
   };
 
   useEffect(() => {
     getLimitProduct();
-    treadingData();
+    trendingDataF();
   }, []);
 
   return (
-    <AppContext.Provider value={{ limitData, trendingData }}>
+    <AppContext.Provider value={{ limitData, trendingData, isLoading }}>
       {children}
     </AppContext.Provider>
   );

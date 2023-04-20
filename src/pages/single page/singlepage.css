@@ -73,13 +73,15 @@
 
 .quantity{
     display: flex;
-    gap: 0.8rem;
-    width: 12rem;
+    gap: 0.6rem;
+    width: 13rem;
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid red; */
     padding: 0.3rem 0.5rem;
 }
+
+
 .quantity .qtyP{
     margin: 0;
     
@@ -187,6 +189,18 @@ label.css-dqr9h-MuiRating-label{
         width: 100%;
       
     }
+
+    
+   .quantity{
+    display: flex;
+    gap: 0.6rem;
+    width: 13rem;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding: 0.3rem 0.5rem;
+}
+
 
     .breadCru{
         width: 100%;

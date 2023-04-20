@@ -60,7 +60,7 @@
 
 .imgL{
 
-   width: 200px;
+   width: 201px;
    height: 200px;
    object-fit: contain ;
    border-radius: 5px;
@@ -103,7 +103,7 @@
 .productBrandSpan{
 
    
-    font-weight: 400;
+    font-weight: 401;
     text-align: center;
     font-size: 0.8rem;
     letter-spacing: 1px;

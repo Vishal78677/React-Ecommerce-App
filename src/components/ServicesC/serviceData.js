@@ -5,17 +5,17 @@ import card3 from './images/card3.jpg';
 export const Data = [
   {
     heading: 'Frequently Asked Questions',
-    note: 'Update on safe shopping im our stores ',
+    note: 'watch your doubts regarding site ',
     img: `${card1}`,
   },
   {
     heading: 'Online Payment Process',
-    note: 'Update on safe shopping im our stores ',
+    note: 'We accept all online payment methods',
     img: `${card2}`,
   },
   {
     heading: 'Home Delivery',
-    note: 'Update on safe shopping im our stores ',
+    note: 'We provide best home delivery service',
     img: `${card3}`,
   },
 ];
