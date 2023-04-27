@@ -86,15 +86,8 @@ const Products = () => {
             );
           })
         ) : (
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginTop: '20rem',
-            }}
-          >
-            <h1 style={{ fontSize: '1.6rem' }}>No Products Available</h1>
+          <div className='noProducts'>
+            <h1 className='npHeading'>Sorry No Products Available</h1>
           </div>
         )}
       </div>

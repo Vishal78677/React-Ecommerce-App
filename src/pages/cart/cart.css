@@ -92,6 +92,25 @@
 
 
 /* media queries starts */
+
+
+@media only screen and (max-width: 380px) and (min-width: 0px){
+   
+   
+    .cartCon .cartWrapper .productsTotal{
+    position: sticky;
+    top: 20px;
+    width: 20rem;
+    height: 19rem;
+    border-radius: 7px;
+    background-color: white;
+
+     }
+    
+
+}
+
+
  /* sm device */
 
  @media only screen and (max-width: 600px) {

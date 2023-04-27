@@ -7,12 +7,19 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
 import './cart.css';
 import { setToggleCartQty } from '../../reducer/CartSlice';
 import { Button } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const { cart } = useSelector((state) => state.cartSlice);
 
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
+
+  const handleAddBtn = () => {
+    navigate('/products');
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
 
   useEffect(() => {
     dispatch(setToggleCartQty());
@@ -42,9 +49,9 @@ const Cart = () => {
                     <h1 className='emptyH'> Your Cart Is Empty </h1>
                     <ProductionQuantityLimitsIcon className='emptyIcon' />
                   </div>
-                  <NavLink to='/products'>
+                  <div onClick={handleAddBtn}>
                     <Button variant='contained'>Add Items</Button>
-                  </NavLink>
+                  </div>
                 </div>
               </>
             )}

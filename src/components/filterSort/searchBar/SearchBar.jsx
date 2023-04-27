@@ -17,8 +17,10 @@ const SearchBar = () => {
   const handleData = () => {
     if (search) {
       dispatch(fetchSearchProducts(search));
+      setSearch('');
     } else {
       alert('please write something');
+      setSearch('');
     }
   };
 
@@ -35,6 +37,7 @@ const SearchBar = () => {
         <input
           onChange={handleSearch}
           onKeyUp={handleEnterKey}
+          value={search}
           type='text'
           placeholder='search...'
         />

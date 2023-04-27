@@ -10,6 +10,12 @@
     padding-bottom: 4rem;
    
   }
+
+
+  .cardd .card_details .name-price .titleHeading{
+
+    font-size: 1.5rem;
+  }
   
 .cardd{
   display: flex;
@@ -49,6 +55,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0.6rem;
   
   }
   
@@ -91,3 +98,74 @@
   display: flex;
   justify-content: center;
 }  
+
+.noProducts{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+}
+
+.noProducts .npHeading{
+ 
+  font-size: 1.6rem;
+
+}
+
+@media only screen and (max-width:  768px) and (min-width: 0px){
+
+  .cardd .card_details .name-price .titleHeading{
+
+    font-size: 1.1rem;
+
+    
+  }
+
+  .wrapper_content_pro{
+    padding-top: 2.8rem;
+  }
+
+  .noProducts{
+    margin-top: 0rem;
+  }
+
+  .noProducts .npHeading{
+    font-size: 1.2rem;
+  }
+
+
+}
+
+@media only screen and (max-width:  1400px) and (min-width: 768px){
+
+
+
+  .wrapper_content_pro{
+    padding-top: 2.8rem;
+  }
+
+  .noProducts{
+    margin-top: 10rem;
+    margin-left: 1rem;
+    width: 20rem;
+    height: 50vh;
+  }
+
+  .noProducts .npHeading{
+    font-size: 1.3rem;
+  }
+
+
+}
+
+
+@media only screen and (min-width : 1400px){
+
+  .noProducts{
+    width: 24rem;
+  }
+
+}
+
+

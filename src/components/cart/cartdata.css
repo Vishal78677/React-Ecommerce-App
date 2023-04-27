@@ -36,6 +36,11 @@
     gap: 0.4rem;
 
 }
+
+div.css-13xy2my{
+ box-shadow: none ;
+}
+
 .cartData .cartProducts .leftDetails .leftHeading{
  
     font-size: 1rem;
@@ -266,10 +271,44 @@ td.css-177gid-MuiTableCell-root{
 
 
 
+
+
+
 /* media queries starts */
+
+
+@media only screen and (max-width: 380px) and (min-width: 0px){
+
+ 
+  .cartData .cartBtns .btnS{
+
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 0.4rem 0.5rem;
+  }
+
+  .cartData .cartBtns .leftBtn{
+      
+     background-color: rgb(246, 134, 64);
+     border-radius: 5px;
+     color: white;
+     font-size: 0.9rem;
+  }
+
+
+
+} 
+
+
+
+
+
  /* xs device */
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) and (min-width: 380px){
+
+
+ 
   
  
  .cartData .cartBtns{
@@ -283,7 +322,11 @@ td.css-177gid-MuiTableCell-root{
 
   }
 
+
+
   /*  sm device */
+
+
 
  @media only screen and (max-width: 768px) {
   

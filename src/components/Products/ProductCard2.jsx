@@ -20,7 +20,7 @@ const ProductCard2 = ({
       </div>
       <div className='card_details'>
         <div className='name-price'>
-          <h3 style={{ fontSize: '1.5rem' }}>{title} </h3>
+          <h3 className='titleHeading'>{title} </h3>
           <h3 style={{ fontSize: '1rem' }}>${price}</h3>
         </div>
         <Rating name='read-only' value={rating} readOnly />
